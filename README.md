@@ -1,1 +1,4 @@
-# lesenka-52
+# Лесенка-52
+Верстка MPA на [Astro](https://astro.build).
+
+*[MPA]: Multi-Page Application
