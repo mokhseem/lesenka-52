@@ -1,0 +1,18 @@
+[class*="button"] {
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  color: hsl(var(--color-whitesmoke));
+  border: none;
+  border-radius: 2px;
+  filter: drop-shadow(0 4px 6px hsl(var(--color-black) / 6%));
+}
+
+
+[class*="button"]:is([class$="orange"]) {
+  background-color: hsl(var(--color-royalorange));
+}
+
+[class*="button"]:is([class$="orange"]):hover {
+  background-color: hsl(var(--color-jetblack));
+}

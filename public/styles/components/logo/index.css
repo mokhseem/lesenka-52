@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+.logo__link {
+  width: 125px;
+  height: 50px;
+  margin-top: 5px;
+  background-image: url("/images/logo-light.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(1px 1px 4px hsl(var(--color-black) / 15%));
+}
+
+.logo__tagline {
+  display: inline-grid;
+  font-weight: 500;
+}
+
+@media (width < 1024px) {
+  .logo__link {
+    width: 64px;
+    height: 26px;
+    margin-top: 4px;
+  }
+}
+
+@media (width < 1152px) {
+  .logo__tagline {
+    display: none;
+  }
+}
