@@ -1,0 +1,24 @@
+---
+// Welcome to Astro! Everything between these triple-dash code fences
+// is your "component frontmatter". It never runs in the browser.
+console.log('This runs in your terminal, not the browser!');
+import Header from '../components/Header.astro';
+---
+<!-- Below is your "component template." It's just HTML, but with
+     some magic sprinkled in to help you build great templates. -->
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/index.css">
+  </head>
+  <body class="page__body">
+    <Header />
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+<style>
+  h1 {
+    color: orange;
+  }
+</style>

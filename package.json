@@ -1,0 +1,33 @@
+{
+  "name": "lesenka-52",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mokhseem/lesenka-52.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mokhseem/lesenka-52/issues"
+  },
+  "homepage": "https://github.com/mokhseem/lesenka-52#readme",
+  "dependencies": {
+    "astro": "^2.5.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.59.6",
+    "eslint": "^8.41.0",
+    "eslint-plugin-astro": "^0.27.0",
+    "stylelint-config-htmlacademy": "^1.1.4",
+    "stylelint-order-htmlacademy": "2.0.6"
+  }
+}
