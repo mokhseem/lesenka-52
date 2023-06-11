@@ -1,7 +1,15 @@
-.menu__list {
+[class$="__nav-list"] {
   margin: 0;
-  padding: 0;
+  padding-left: 0;
   list-style: none;
+}
+
+.menu__item:nth-child(3) {
+  order: 1;
+}
+
+.menu__item:nth-child(5) {
+  order: 2;
 }
 
 @media (width < 1024px) {
@@ -12,7 +20,7 @@
     display: grid;
   }
 
-  .menu__list {
+  .menu__nav-list {
     display: grid;
     justify-items: center;
     place-self: center;
@@ -25,7 +33,7 @@
     column-gap: 4.5rem;
   }
 
-  .menu__list {
+  .menu__nav-list {
     display: flex;
     column-gap: 2.25rem;
   }

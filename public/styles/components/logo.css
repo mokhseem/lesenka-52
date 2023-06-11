@@ -1,0 +1,59 @@
+.logo__wrapper {
+  display: grid;
+  row-gap: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 1.25rem;
+}
+
+.logo__link {
+  width: 125px;
+  height: 50px;
+  margin-top: -1px;
+  background-image: url("/images/logo-light.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(1px 1px 4px hsl(var(--color-black) / 15%));
+}
+
+.logo__tagline {
+  display: inline-grid;
+  font-weight: 500;
+}
+
+:where(.footer) .logo__wrapper::after {
+  content: "Монолитные лестницы";
+  font-weight: 500;
+  color: hsl(var(--color-royalorange));
+  text-transform: uppercase;
+  letter-spacing: 0.27em;
+}
+
+:where(.footer) .logo__link {
+  background-image: url("/images/logo-dark.svg");
+}
+
+:where(.footer) .logo__tagline {
+  filter: drop-shadow(1px 1px 4px hsl(var(--color-black) / 15%));
+}
+
+@media (width < 1024px) {
+  :where(.header) .logo__link {
+    width: 64px;
+    height: 26px;
+  }
+
+  :where(.header) .logo__tagline {
+    display: none;
+  }
+}
+
+@media (1024px <= width < 1152px) {
+  :where(.header) .logo__tagline {
+    width: 0;
+    visibility: hidden;
+  }
+}

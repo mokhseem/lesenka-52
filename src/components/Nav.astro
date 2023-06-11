@@ -1,0 +1,32 @@
+---
+import Phone from './Phone.astro';
+const { block } = Astro.props;
+---
+<ul class={`${block}__nav-list`}>
+  <li class={`${block}__item`}>
+    <a class={`${block}__link`} href="#">
+      О компании
+    </a>
+  </li>
+  <li class={`${block}__item`}>
+    <a class={`${block}__link`} href="#">
+      Каталог
+    </a>
+  </li>
+  <li class={`${block}__item`}>
+    <a class={`${block}__link`} href="#">
+      Блог
+    </a>
+  </li>
+  <li class={`${block}__item`}>
+    <a class={`${block}__link`} href="#">
+      Примеры работ
+    </a>
+  </li>
+  <li class={`${block}__item`}>
+    <a class={`${block}__link`} href="#">
+      Контакты
+    </a>
+  </li>
+</ul>
+<Phone />

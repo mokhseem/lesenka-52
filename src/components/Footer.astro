@@ -1,0 +1,20 @@
+---
+import Logo from './Logo.astro';
+import Nav from './Nav.astro';
+---
+<footer class="footer">
+  <div class="footer__inner container">
+    <Logo />
+    <Nav block="footer" />
+    <span class="footer__copyright">&copy; 2020 Все права защищены.</span>
+    <a class="footer__privacy privacy__link" href="#">Политика конфиденциальности</a>
+    <div class="footer__social">
+      <a class="social__link" href="#">
+        <img src="/images/icons/vk.svg" width="22" height="22" alt="Вконтакте">
+      </a>
+      <a class="social__link" href="#">
+        <img src="/images/icons/instagram.svg" width="22" height="22" alt="Инстаграм">
+      </a>
+    </div>
+  </div>
+</footer>

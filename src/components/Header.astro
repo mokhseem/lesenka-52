@@ -1,9 +1,13 @@
 ---
 import Logo from './Logo.astro';
-import Menu from './Menu.astro';
+import Nav from './Nav.astro';
 ---
-<header class="header container">
-  <Logo />
-  <Menu />
-  <input class="header__menu-checkbox" type="checkbox">
+<header class="header">
+  <div class="header__inner container">
+    <Logo />
+    <nav class="menu">
+      <Nav block="menu" />
+    </nav>
+    <input class="header__menu-checkbox" type="checkbox">
+  </div>
 </header>

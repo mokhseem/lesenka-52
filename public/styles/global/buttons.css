@@ -1,4 +1,4 @@
-[class*="button"] {
+[class*="__button"] {
   font-size: inherit;
   line-height: inherit;
   font-family: inherit;
@@ -9,10 +9,10 @@
 }
 
 
-[class*="button"]:is([class$="orange"]) {
+[class*="__button"]:is([class$="--orange"]) {
   background-color: hsl(var(--color-royalorange));
 }
 
-[class*="button"]:is([class$="orange"]):hover {
+[class*="__button"]:is([class$="--orange"]):hover {
   background-color: hsl(var(--color-jetblack));
 }

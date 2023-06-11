@@ -1,0 +1,33 @@
+.phone {
+  display: grid;
+  align-self: start;
+  row-gap: 10px;
+}
+
+.phone__link {
+  font-weight: 500;
+  font-size: var(--font-size-larger);
+  line-height: 1.2;
+}
+
+[class^="phone__button"] {
+  height: 40px;
+}
+
+@media (width < 1024px) {
+  :where(.header) .phone {
+    display: none;
+  }
+}
+
+@media (width >= 1024px) {
+  :where(.header) .phone {
+    position: relative;
+  }
+
+  :where(.header) [class^="phone__button"] {
+    position: absolute;
+    top: 2rem;
+    width: 100%;
+  }
+}

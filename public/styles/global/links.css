@@ -1,0 +1,12 @@
+[class$="__link"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+[class$="__link"]:is(:hover, :focus) {
+  opacity: 0.7;
+}
+
+[class$="__link"]:active {
+  opacity: 0.5;
+}

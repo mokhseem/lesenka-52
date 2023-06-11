@@ -3,6 +3,7 @@
 // is your "component frontmatter". It never runs in the browser.
 console.log('This runs in your terminal, not the browser!');
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 <!-- Below is your "component template." It's just HTML, but with
      some magic sprinkled in to help you build great templates. -->
@@ -13,8 +14,11 @@ import Header from '../components/Header.astro';
     <link rel="stylesheet" href="/styles/index.css">
   </head>
   <body class="page__body">
-    <Header />
-    <h1>Hello, World!</h1>
+    <div class="page__stack">
+      <Header />
+      <h1>Hello, World!</h1>
+      <Footer />
+    </div>
   </body>
 </html>
 <style>
