@@ -5,9 +5,36 @@ import Nav from './Nav.astro';
 <header class="header">
   <div class="header__inner container">
     <Logo />
-    <nav class="menu">
+    <nav class="menu" id="menu" popover>
       <Nav block="menu" />
     </nav>
-    <input class="header__menu-checkbox" type="checkbox">
+    <button class="menu__button" popovertarget="menu">
+      <svg class="hamburger" viewBox="0 0 100 100" width="25">
+        <rect class="line__top"
+              width="100" height="12"
+              x="0" y="15" rx="5">
+        </rect>
+        <rect class="line__middle"
+              width="100" height="12"
+              x="0" y="45" rx="5">
+        </rect>
+        <rect class="line__bottom"
+              width="100" height="12"
+              x="0" y="75" rx="5">
+        </rect>
+      </svg>
+    </button>
   </div>
 </header>
+<script>
+  const menu = document.querySelector('#menu');
+  const desktop = window.matchMedia('(min-width: 1024px)');
+
+  const togglePopoverAttribute = (evt) =>
+    evt.matches
+      ? menu.removeAttribute('popover')
+      : menu.setAttribute('popover', '');
+
+  desktop.addEventListener('change', togglePopoverAttribute);
+  togglePopoverAttribute(desktop);
+</script>
